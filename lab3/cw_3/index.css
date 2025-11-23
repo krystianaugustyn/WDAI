@@ -1,0 +1,22 @@
+table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    font-family: sans-serif;
+    width: 90%;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: left;
+}
+
+img {
+    border-radius: 5px;
+    max-width: 100px;
+}
+
+filter{
+    text-align: center;
+    margin-bottom: 20px;
+}

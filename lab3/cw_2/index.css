@@ -1,0 +1,10 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: 50px;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+}
