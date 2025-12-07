@@ -16,7 +16,7 @@ function generatePassword() {
     const length = Math.floor(Math.random() * (max_length - min_length + 1)) + min_length;
     let password = "";
 
-    for (let i=0; i< length; i++) {
+    for (let i= 0; i< length; i++) {
         let index = Math.floor(Math.random() * chars.length);
         password += chars[index];
     }

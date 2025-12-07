@@ -67,7 +67,7 @@ const bird = {
 
 let baseY = canvas.height - 112;
 const pipes = [];
-const pipeGap = 120;
+const pipeGap = 200;
 const pipeSpeed = 2.5;
 let lastPipe = 0;
 const pipeInterval = 1500;
@@ -215,19 +215,10 @@ function render(){
         ctx.save();
         ctx.translate(p.x, p.topY);
         ctx.scale(1, -1);
-        ctx.drawImage(
-            IMAGES.pipe,
-            0, 0, pw, ph,
-            0, 0, pw, p.topY
-        );
+        ctx.drawImage(IMAGES.pipe, 0, 0, pw, ph, 0, 0, pw, p.topY);
         ctx.restore();
 
-        ctx.drawImage(
-            IMAGES.pipe,
-            0, 0, pw, ph,
-            p.x, p.bottomY,
-            pw, canvas.height - p.bottomY
-        );
+        ctx.drawImage(IMAGES.pipe, 0, 0, pw, ph, p.x, p.bottomY, pw, canvas.height - p.bottomY);
     }
 
     const bw = IMAGES.base.width;
